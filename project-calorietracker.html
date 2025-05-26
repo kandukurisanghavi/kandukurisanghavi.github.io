@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calorie Tracker App | Sanghavi Kandukuri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)),
+                  url('calorie_background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #e0f7fa;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(0,0,0,0.75);
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(77,208,225,0.4);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4dd0e1;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.15rem;
+      color: #cfd8dc;
+      margin-bottom: 50px;
+      line-height: 1.8;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: #00e5ff;
+      margin-bottom: 15px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #4dd0e1;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🥗 Food Calorie Tracker App</h1>
+
+    <p class="intro">
+      This full-stack web app empowers users to track calories based on meals, exercise, and nutrition data. Built with Django and integrated with an external Nutrition API, the app offers real-time food analysis, graphs, and personalized insights to support healthy lifestyle choices.
+    </p>
+
+    <div class="section">
+      <h3>📌 Problem Statement</h3>
+      <p>
+        People often struggle to understand the nutritional value of their food and track calories effectively. Manual tracking is time-consuming and inaccurate, and most solutions lack integration with real-time data or personalized goals.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>✅ Features Implemented</h3>
+      <ul>
+        <li>🔐 Credential validation and user authentication</li>
+        <li>🍎 Food search and calorie data using Nutrition API</li>
+        <li>📋 Favorite food list for quick access</li>
+        <li>📉 Calorie tracking for both meals and exercise</li>
+        <li>📊 Nutrition data visualized with interactive graphs</li>
+        <li>🗑️ Delete confirmation pop-up for better UX</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>🛠️ Technical Stack</h3>
+      <ul>
+        <li>Backend: Django Framework (Python)</li>
+        <li>Frontend: HTML, CSS (Bootstrap)</li>
+        <li>API: Nutritionix or similar external API</li>
+        <li>Database: SQLite</li>
+        <li>Visualization: Chart.js (for nutrition graphs)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>📚 Project Learnings</h3>
+      <ul>
+        <li>Integrated and consumed third-party APIs</li>
+        <li>Designed Django models aligned with ER diagrams</li>
+        <li>Handled user input securely and efficiently</li>
+        <li>Improved UX with form validation and modals</li>
+      </ul>
+    </div>
+
+    <a href="projects.html" class="back-link">⬅️ Back to Projects</a>
+  </div>
+</body>
+</html>

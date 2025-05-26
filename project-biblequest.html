@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BibleQuest | Sanghavi Kandukuri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98)),
+                  url('A_digital_background_features_a_technology-themed_.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 50px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #4dd0e1;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px rgba(77, 208, 225, 0.5);
+    }
+
+    .section-title {
+      color: #00e5ff;
+      font-size: 1.6rem;
+      margin-top: 50px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      border-left: 5px solid #00e5ff;
+      padding-left: 12px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #cfd8dc;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      color: #d0faff;
+      font-size: 1.05rem;
+    }
+
+    .quote-box {
+      background: rgba(0, 255, 255, 0.08);
+      border-left: 4px solid #4dd0e1;
+      padding: 20px 25px;
+      font-style: italic;
+      color: #b2ebf2;
+      border-radius: 10px;
+      margin: 40px 0;
+      font-size: 1.15rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(77, 208, 225, 0.3);
+    }
+
+    .feature {
+      margin-bottom: 50px;
+    }
+
+    .feature img {
+      width: 100%;
+      border-radius: 12px;
+      border: 4px solid #4dd0e1;
+      box-shadow: 0 0 25px rgba(77, 208, 225, 0.3);
+      margin-top: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .feature img:hover {
+      transform: scale(1.01);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 50px;
+      color: #4dd0e1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📖 BibleQuest – Interactive Bible Study Web App</h1>
+
+    <h2 class="section-title">💡 Project Overview</h2>
+    <p>
+      BibleQuest is a full-stack faith-based web application that brings interactive Bible engagement to life. Designed as my master's project, it combines my technical skills with my spiritual journey. Users can search Scripture, receive daily verses, take quizzes with email feedback, and share prayer requests — creating a digital space rooted in encouragement and faith.
+    </p>
+
+    <h2 class="section-title">🎯 Objectives</h2>
+    <ul>
+      <li>Deliver a secure, user-friendly Bible platform</li>
+      <li>Enable Scripture access with interactive features</li>
+      <li>Encourage users with daily verses and community prayer</li>
+      <li>Build user engagement through knowledge quizzes</li>
+    </ul>
+
+    <h2 class="section-title">🧰 Tools & Technologies</h2>
+    <ul>
+      <li>Django (Python Backend)</li>
+      <li>Bootstrap (Frontend Styling)</li>
+      <li>SQLite Database</li>
+      <li>Bible API Integration</li>
+      <li>Email Module for Score Delivery</li>
+    </ul>
+
+    <div class="feature">
+      <h2 class="section-title">🏠 Dashboard Overview</h2>
+      <p>
+        After login, users land on a sleek dashboard that gives them quick access to all features: Bible, Quiz, Verse of the Day, and Prayer Requests.
+      </p>
+      <img src="bible.png" alt="BibleQuest Home Screenshot" />
+    </div>
+
+    <div class="feature">
+      <h2 class="section-title">📖 Chapter Viewer</h2>
+      <p>
+        Users can read the Bible by selecting a testament, book, and chapter. It dynamically loads content through the Bible API.
+      </p>
+      <img src="chapter.png" alt="Bible Chapter View Screenshot" />
+    </div>
+
+    <div class="feature">
+      <h2 class="section-title">🧪 Quiz & Email Score</h2>
+      <p>
+        Users can test their Bible knowledge through multiple-choice quizzes. After submission, they receive a score and can email it to themselves.
+      </p>
+      <img src="quiz.png" alt="Quiz Screenshot" />
+    </div>
+
+    <div class="feature">
+      <h2 class="section-title">🙏 Prayer Request Wall</h2>
+      <p>
+        Users can anonymously submit prayer requests and read others’ requests to encourage and support one another.
+      </p>
+      <img src="prayer.png" alt="Prayer Request Screenshot" />
+    </div>
+
+    <div class="feature">
+      <h2 class="section-title">🌟 Verse of the Day</h2>
+      <p>
+        Each day, a verse is shown to uplift and inspire users. It's pulled from Scripture and styled in a clean layout.
+      </p>
+      <img src="verse.png" alt="Verse of the Day Screenshot" />
+    </div>
+
+    <h2 class="section-title">📈 Outcome & Reflection</h2>
+    <p>
+      BibleQuest helped me connect my technical learning with a higher purpose. I gained real-world skills in authentication, form handling, API integration, and user experience design — while also building something I care deeply about. It’s a reflection of faith through code.
+    </p>
+
+    <div class="quote-box">
+      “BibleQuest helped me grow both technically and spiritually. It’s a place where users can explore faith, one feature at a time.”
+    </div>
+
+    <a href="projects.html" class="back-link">⬅️ Back to Projects</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Dashboard | Sanghavi Kandukuri</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98)),
+                  url('A_digital_background_features_a_technology-themed_.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 60px 20px;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #4dd0e1;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      color: #00e5ff;
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #cfd8dc;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .quote-box {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-left: 5px solid #4dd0e1;
+      padding: 20px 25px;
+      font-style: italic;
+      color: #b2ebf2;
+      border-radius: 10px;
+      margin: 30px 0;
+    }
+
+    .screenshot {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 5px solid #4dd0e1;
+      box-shadow: 0 0 20px rgba(77, 208, 225, 0.5);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #4dd0e1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Data-Driven Personal Finance Dashboard</h1>
+
+    <h2 class="section-title">💼 Project Overview</h2>
+    <p>
+      As someone managing life in a new country while studying full-time, I faced a common challenge: understanding where my money was going and how to plan smarter. This Power BI dashboard was built to help me visualize income and expenses, classify savings patterns, and highlight moments where financial behavior shifted based on real-life events.
+    </p>
+    <p>
+      I created this project initially to apply what I was learning in Power BI and DAX. I chose to use my own data — tracking my income, expenses, savings, and special events — so I could better understand my own patterns. What started as a learning exercise soon became a personal solution. And once I saw its value, I realized this could help others too.
+    </p>
+
+    <h2 class="section-title">🎯 Project Objectives</h2>
+    <ul>
+      <li>Track monthly income, expenses, and net savings over time</li>
+      <li>Visualize trends and detect seasonal spending patterns</li>
+      <li>Break down expenses by category to identify overspending</li>
+      <li>Connect personal life events to financial changes</li>
+    </ul>
+
+    <h2 class="section-title">📦 Data Pipeline</h2>
+    <p>
+      I manually recorded data in Excel from August 2023 to May 2025, including part-time income, grocery and ride costs, India travel expenses, and monthly savings. I cleaned and structured the dataset, added date formatting, categories, and derived new fields such as Savings Type. The data was then imported into Power BI for modeling and analysis.
+    </p>
+
+    <h2 class="section-title">🧠 Design Decisions</h2>
+    <ul>
+      <li>✅ Used KPI Cards to give a snapshot of key performance: Net Savings, Total Expenses, Total Income, India Spending</li>
+      <li>📈 Used a Line Chart to show income vs. expenses over time for easy trend comparison</li>
+      <li>📊 Category-wise bar chart to identify where money goes most (Walmart, Market Basket, etc.)</li>
+      <li>🧠 Created Savings Type classification using DAX logic: Balanced, High Saver, or Overspender</li>
+      <li>📅 Included a table mapping Life Events to monthly spending behavior</li>
+    </ul>
+
+    <h2 class="section-title">📌 Insights & Actions</h2>
+    <ul>
+      <li>🎯 I discovered that I saved the most during academic months with fewer distractions and fixed routines</li>
+      <li>📉 After analyzing these trends, I adjusted monthly budgets to ensure I could stay within a “Balanced” saver range</li>
+    </ul>
+
+    <h2 class="section-title">📈 Outcome & Reflection</h2>
+    <p>
+      This project helped me build confidence with Power BI and proved the real value of data storytelling. It wasn't just about charts — it was about understanding myself better. I believe that if a dashboard can help someone manage their life more clearly, it’s already a powerful product.
+    </p>
+    <p>
+      I’m excited to apply these skills in real-world business contexts — turning raw data into insights that drive better decisions.
+    </p>
+
+    <div class="quote-box">
+      “I built this dashboard to help myself — and now, I hope it inspires others to listen to their data too.”
+    </div>
+
+    <div class="screenshot">
+      <h2 class="section-title">📸 Dashboard Preview</h2>
+      <img src="f24148d9-17a7-4917-be24-408eb169ceed.png" alt="Finance Dashboard Screenshot" />
+    </div>
+
+    <a href="projects.html" class="back-link">⬅️ Back to Projects</a>
+  </div>
+</body>
+</html>
